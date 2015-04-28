@@ -1,6 +1,6 @@
 {
     "name": "mothepro/market-quotes",
-    "description": "Description of project MarketQuotes.",
+    "description": "A simple layer of abstraction to get information on the market",
     "authors": [
         {
             "name": "Maurice Prosper",
