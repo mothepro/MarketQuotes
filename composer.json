@@ -1,0 +1,20 @@
+{
+    "name": "mothepro/market-quotes",
+    "description": "Description of project MarketQuotes.",
+    "authors": [
+        {
+            "name": "Maurice Prosper",
+            "email": "maurice.prosper@ttu.edu"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "educoder/pest": "1.0.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "MarketQuotes": "src/"
+        }
+    }
+}
