@@ -40,8 +40,8 @@ class Company {
 	 */
 	public static function lookup($tag) {
 		$ret = array();
-		$data = MarketOnDemand::lookup($tag);
-	
+		$data = \API\MarkitOnDemand::lookup($tag);
+
 		if(is_array($data) && !empty($data))
 			foreach ($data as $comp) {
 				$tmp = new Company;

@@ -78,7 +78,7 @@ class Quote {
 	public static function lookupRecent(Company $input) {
 		$ret = null;
 		
-		$data = MarketOnDemand::quote($input->getSymbol());
+		$data = \API\MarkitOnDemand::quote($input->getSymbol());
 	
 		if(is_array($data) && !empty($data)) {
 			$ret = new Quote;
