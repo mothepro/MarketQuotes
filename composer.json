@@ -1,6 +1,7 @@
 {
     "name": "mothepro/market-quotes",
     "description": "A simple layer of abstraction to get information on the market",
+    "license": "MIT",
     "authors": [
         {
             "name": "Maurice Prosper",
@@ -8,8 +9,9 @@
         }
     ],
     "require": {
-        "php": ">=5.3",
-        "educoder/pest": "1.0.0"
+        "php": ">=5.4",
+        "educoder/pest": "1.0.0",
+        "mothepro/yql-builder": "dev-master"
     },
     "minimum-stability": "dev",
     "autoload": {
