@@ -6,10 +6,12 @@ namespace MarketQuotes;
  * A simple layer of abstraction to get information on the market
  * Uses http://dev.markitondemand.com/ API
  *
+ * @TODO http://www.bloomberg.com/markets/chart/data/1D/AAPL:US
+ *
  * @author Maurice Prosper <maurice.prosper@ttu.edu>
  * @package MarketQuotes
  */
-abstract class MarketQuotes {
+abstract class MarketOnDemand {
 	/**
 	 * Where we get our data
 	 */
@@ -30,12 +32,17 @@ abstract class MarketQuotes {
 	 * Creates the rest client
 	 */
 	private static function init() {
-		if(!isset(self::$rest)) {
-			if(self::FORMAT === '/json')
+		if(!isset(self::$rest))
+			switch(self::FORMAT) {
+			case '/json':
+			default:
 				self::$rest = new \PestJSON(self::URL);
-			elseif(self::FORMAT === '/xml')
+				break;
+			
+			case '/xml':
 				self::$rest = new \PestXML(self::URL);
-		}
+				break;
+			}
 	}
 
 	/**
