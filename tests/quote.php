@@ -1,2 +1,2 @@
 <?php
-return MarketQuotes\MarketQuotes::quote('AAPL');
+return MarketQuotes\Quote::lookupRecent('AAPL');

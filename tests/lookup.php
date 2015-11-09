@@ -1,2 +1,2 @@
 <?php
-return MarketQuotes\MarketQuotes::lookup('apple');
+return \MarketQuotes\Company::lookup('apple');
