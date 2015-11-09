@@ -1,5 +1,8 @@
 <?php
-$ibm = \MarketQuotes\Company::lookup('IBM');
-$ibm->getRecentQuote();
+// IBM list
+$ibms = \MarketQuotes\Company::lookup('IBM');
 
-return $ibm;
+// first IBM
+$ibms[0]->getRecentQuote();
+
+return $ibms;

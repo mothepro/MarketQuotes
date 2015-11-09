@@ -2,15 +2,17 @@
 
 Stock Lookup [apple]
 <pre>
-	<?php var_dump(require 'lookup.php'); ?>
+	<?php var_dump(require 'MoD_lookup.php'); ?>
 </pre>
 
 <hr>
 
 Stock Lookup [AAPL]
 <pre>
-	<?php var_dump(require 'quote.php'); ?>
+	<?php var_dump(require 'MoD_quote.php'); ?>
 </pre>
+
+<hr>
 
 Stock Lookup [IBM] & add quote
 <pre>
