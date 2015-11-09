@@ -1,6 +1,5 @@
 <?php
-
-namespace MarketQuotes;
+namespace API;
 
 /**
  * A simple layer of abstraction to get information on the market
@@ -11,11 +10,11 @@ namespace MarketQuotes;
  * @author Maurice Prosper <maurice.prosper@ttu.edu>
  * @package MarketQuotes
  */
-abstract class MarketOnDemand {
+abstract class MarkitOnDemand {
 	/**
 	 * Where we get our data
 	 */
-	const URL = 'http://dev.markitondemand.com/Api/v2/';
+	const URL = 'http://dev.markitondemand.com/MODApis/Api/v2/';
 
 	/**
 	 * Fomrat API returns data in
