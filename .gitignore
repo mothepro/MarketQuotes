@@ -1,4 +1,5 @@
-nbproject/
-vendor/
+/nbproject/
+/vendor/
 composer.lock
 www/
+/.idea/
